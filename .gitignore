@@ -1,0 +1,53 @@
+# Variables de entorno
+.env
+.env.*
+
+# Archivos de Docker override (locales)
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# Volúmenes y datos locales (bases de datos, uploads, etc.)
+data/
+db_data/
+volumes/
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+cache/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Git
+.git/
+.gitignore~
+
+# Python (si aplica)
+__pycache__/
+*.pyc
+venv/
+.env.venv
+
+# Java (si aplica)
+target/
+*.class
+
+# PHP (si aplica)
+vendor/
+
+# Backups
+*.bak
+*.old
+

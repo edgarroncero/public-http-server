@@ -1,18 +1,5 @@
 services:
 
-  http-server:
-    env_file: .env
-    image: nginx:latest
-    container_name: http-server
-    volumes:
-      - ./templates:/etc/nginx/templates:ro
-      - ./public_html:/usr/share/nginx/html:ro
-    environment:
-      #- NGINX_HOST=${NGINX_PORT}
-      - NGINX_PORT=${NGINX_PORT}
-    ports:
-      - ${NGINX_CONTAINER_PORT}
-
   ngrok:
     env_file: .env
     image: ngrok/ngrok:latest
